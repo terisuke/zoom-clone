@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
   const now = new Date();
 
-  const time = now.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' });
+  const time = now.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo' });
   const date = (new Intl.DateTimeFormat('ja-JP', { dateStyle: 'full' })).format(now);
 
   return (
