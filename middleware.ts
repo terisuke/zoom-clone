@@ -8,9 +8,11 @@ const protectedRoutes = createRouteMatcher([
   '/meeting(.*)',
 ])
 
-export default clerkMiddleware((auth,req) => {
-  if (protectedRoutes(req)) auth().protect()
-    }) ;
+export default clerkMiddleware((auth, req) => {
+  if (protectedRoutes(req)) {
+    auth().protect();
+  }
+});
 
 export const config = {
   matcher: [
