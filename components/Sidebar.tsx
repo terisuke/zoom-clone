@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { sidebarLinks } from '@/constants';
@@ -14,10 +13,11 @@ const Sidebar = () => {
       <div className="flex flex-1 flex-col gap-6">
         {sidebarLinks.map((item) => {
           const isActive = pathname === item.route || pathname.startsWith(`${item.route}/`);
-          
+
           return (
-            <Link
+            <a
               href={item.route}
+              target={item.target}
               key={item.label}
               className={cn(
                 'flex gap-4 items-center p-4 rounded-lg justify-start',
@@ -35,7 +35,7 @@ const Sidebar = () => {
               <p className="text-lg font-semibold max-lg:hidden">
                 {item.label}
               </p>
-            </Link>
+            </a>
           );
         })}
       </div>
