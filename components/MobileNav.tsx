@@ -29,7 +29,7 @@ const MobileNav = () => {
             <Image
               src="/icons/logo.svg"
               width={32} height={32}
-              alt="Yoom Logo"
+              alt="Logo"
             />
             <p className="text-[26px] font-extrabold text-white max-sm:hidden">なんちゃってZOOM</p>
           </Link>
