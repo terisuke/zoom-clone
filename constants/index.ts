@@ -23,6 +23,12 @@ export const sidebarLinks = [
     label: 'パーソナルルーム',
     imgURL: '/icons/add-personal.svg',
     route: '/personal-room',
+  },
+  {
+    label: '議事録作成',
+    imgURL: '/icons/アンケート用紙のアイコン素材.svg',
+    route: 'https://hackathon20240928-z7fa-laig1p2j1-kousukes-projects-8e2831b8.vercel.app/',
+    target: '_blank',
   }
 ];
 
